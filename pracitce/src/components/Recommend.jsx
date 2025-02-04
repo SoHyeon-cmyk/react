@@ -5,7 +5,7 @@ import { Cloudinary } from "@cloudinary/url-gen";
 const Recommend = () => {
   const [cocktails, setCocktails] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [images, setImages] = useState(true);
+  const [images, setImages] = useState([]);
   const cloudinaryInstance = new Cloudinary({
     cloud: { cloudName: process.env.REACT_APP_CLOUDINARY_CLOUD_NAME },
   })
@@ -51,7 +51,7 @@ const Recommend = () => {
   const handleFileUpload = (e) => {
     e.preventDefault();
 
-    const url = `https://api.cloudinary.com/v1_1/dptpmw2pq/image/upload`;
+    const url = `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/resources/image/upload?prefix=image`;
     const files = e.target.querySelector("[type=file]").files;
     const formData = new FormData();
 
@@ -82,10 +82,7 @@ const Recommend = () => {
       <div className="RCM">
         {cocktails.map((cocktail, index) => (
           <div key={index} className="card">
-            <div className="img-container"></div>
-            <h2>
-              {cocktail.Name} ({cocktail.EnglishName})
-            </h2>
+            <div className="img-container">
             {images.map((image) => {
               const cldImage = cloudinaryInstance.image(image.public_id);
               return (
@@ -94,6 +91,11 @@ const Recommend = () => {
                 </div>
               );
             })}
+            </div>
+            <h2>
+              {cocktail.Name} ({cocktail.EnglishName})
+            </h2>
+
             <p>
               <strong>설명:</strong> {cocktail.Description}
             </p>
