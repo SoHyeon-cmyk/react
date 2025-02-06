@@ -1,6 +1,7 @@
 {
   "0": {
     "Name": "푸스카페",
+    "imageURL":"/image/Webp/main0.webp",
     "EnglishName": "Pousse Cafe",
     "Description": "식후 커피 다음에 나오는 작은 잔의 칵테일",
     "Glassware": "스템드 리큐르 글라스",
@@ -19,6 +20,7 @@
   },
   "1": {
     "Name": "맨해튼",
+    "imageURL":"/image/Webp/main01.webp",
     "EnglishName": "Manhattan",
     "Description": "칵테일의 여왕이라는 별칭을 가지고 있는 칵테일",
     "Glassware": "칵테일 글라스",
@@ -37,6 +39,7 @@
   },
   "2": {
     "Name": "드라이 마티니",
+    "imageURL":"/image/Webp/main02.webp",
     "EnglishName": "Dry Martini",
     "Description": "칵테일의 왕, 헤밍웨이가 사랑한 칵테일",
     "Glassware": "칵테일 글라스",
@@ -53,6 +56,7 @@
   },
   "3": {
     "Name": "올드 패션드",
+    "imageURL":"/image/Webp/main03.webp",
     "EnglishName": "Old Fashioned",
     "Description": "클래식 칵테일의 정석",
     "Glassware": "올드 패션드 글라스",
@@ -73,6 +77,7 @@
   },
   "4": {
     "Name": "브랜디 알렉산더",
+    "imageURL":"/image/Webp/main04.webp",
     "EnglishName": "Brandy Alexander",
     "Description": "영국의 국왕과 덴마크 왕국의 장녀의 결혼을 기념해 바친 칵테일",
     "Glassware": "칵테일 글라스",
@@ -91,6 +96,7 @@
   },
   "5": {
     "Name": "싱가폴 슬링",
+    "imageURL":"/image/Webp/main05.webp",
     "EnglishName": "Singapore Sling",
     "Description": "싱가폴 래플스 호텔에서 고안한 저녁 노을을 표현한 칵테일",
     "Glassware": "푸티드 필스너 글라스",
@@ -113,6 +119,7 @@
   },
   "6": {
     "Name": "블랙 러시안",
+    "imageURL":"/image/Webp/main06.webp",
     "EnglishName": "Black Russian",
     "Description": "러시아를 대표하는 검정색 칵테일",
     "Glassware": "올드 패션드 글라스",
@@ -129,6 +136,7 @@
   },
   "7": {
     "Name": "마가리타",
+    "imageURL":"/image/Webp/main07.webp",
     "EnglishName": "Margarita",
     "Description": "데킬라를 가장 우아하게 마시는 방법",
     "Glassware": "칵테일 글라스",
@@ -147,6 +155,7 @@
   },
   "8": {
     "Name": "러스티 네일",
+    "imageURL":"/image/Webp/main08.webp",
     "EnglishName": "Rusty Nail",
     "Description": "'녹슨 못'이라는 이름의 영국 신사들이 즐겨 마시는 칵테일",
     "Glassware": "올드 패션드 글라스",
@@ -163,6 +172,7 @@
   },
   "9": {
     "Name": "위스키 사워",
+    "imageURL":"/image/Webp/main09.webp",
     "EnglishName": "Whiskey Sour",
     "Description": "새콤한 위스키 칵테일",
     "Glassware": "사워 글라스",
@@ -182,6 +192,7 @@
     ]
   },
   "10": {
+    "imageURL":"/image/Webp/main10.webp",
     "Name": "뉴욕",
     "EnglishName": "New York",
     "Description": "뉴욕에 해가 떠오르는 모습을 한 칵테일",
@@ -202,6 +213,7 @@
     ]
   },
   "11": {
+    "imageURL":"/image/Webp/main11.webp",
     "Name": "다이키리",
     "EnglishName": "Daiquiri",
     "Description": "쿠바의 다이키리 광산에서 이름을 딴 칵테일",
@@ -220,6 +232,7 @@
     ]
   },
   "12": {
+    "imageURL":"/image/Webp/main12.webp",
     "Name": "B-52",
     "EnglishName": "B-52",
     "Description": "미군의 폭격기의 이름을 딴 칵테일",
@@ -238,6 +251,7 @@
     ]
   },
   "13": {
+    "imageURL":"/image/Webp/main13.webp",
     "Name": "준벅",
     "EnglishName": "June Bug",
     "Description": "'6월의 벌레'라는 이름의 싱그러운 색감의 칵테일",
@@ -260,6 +274,7 @@
     ]
   },
   "14": {
+    "imageURL":"/image/Webp/main14.webp",
     "Name": "바카디 칵테일",
     "EnglishName": "Bacardi Cocktail",
     "Description": "바카디만을 위해 만들어진 칵테일",
@@ -278,6 +293,7 @@
     ]
   },
   "15": {
+    "imageURL":"/image/Webp/main15.webp",
     "Name": "쿠바 리브레",
     "EnglishName": "Cuba Libre",
     "Description": "쿠바의 독립을 축하하기 위한 칵테일",
@@ -296,6 +312,7 @@
     ]
   },
   "16": {
+    "imageURL":"/image/Webp/main16.webp",
     "Name": "그래스호퍼",
     "EnglishName": "Grasshopper",
     "Description": "여름의 초원 이미지를 한 칵테일",
@@ -314,6 +331,7 @@
     ]
   },
   "17": {
+    "imageURL":"/image/Webp/main17.webp",
     "Name": "시 브리즈",
     "EnglishName": "Sea breeze",
     "Description": "'바닷바람'이라는 이름을 가진 싱그러운 칵테일",

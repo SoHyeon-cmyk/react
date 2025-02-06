@@ -38,6 +38,21 @@ a {
   display: flex;
   overflow: hidden;
 
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    h3 {
+      color: #7ba811;
+    }
+  }
+
   ul {
     border: 1px solid #2A2A2A;
     border-radius: 50px;
@@ -90,7 +105,7 @@ a {
 .quickBtn {
   position: fixed;
   right: 5%;
-  bottom: 5%;
+  bottom: 8%;
   z-index: 999;
 
   .quick-top {
@@ -112,7 +127,7 @@ a {
 .slider {
   position: relative;
   width: 1500px;
-  margin: 60px auto;
+  margin: 60px auto 80px;
 
   .swiper {
     position: relative;
@@ -195,11 +210,16 @@ a {
   width: 1500px;
   margin: 0 auto;
 
+  h1 {
+    pointer-events: none;
+    user-select: none;
+  }
+
   .RCM {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2rem;
-    margin: 0 auto;
+    margin: 30px auto;
 
     @media (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
@@ -217,27 +237,83 @@ a {
     text-align: left;
 
     .img-container {
-      width: 280px;
-      height: 320px;
-      overflow: hidden; 
+      width: 300px;
+      height: 325px;
+      overflow: hidden;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       img {
-        margin: 0 auto;
-        display: block;
         width: 100%;
         height: 100%;
-        object-fit: cover;  
-        object-position: center; 
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+        margin-left: 8px;
       }
     }
-    h2{
+
+    h2 {
       margin: 15px 0;
     }
   }
 }
 
+.mid-slide {
+  width: 1500px;
+  height: 600px;
+  margin: 0 auto;
 
+  .swiper-slider {
+    all: unset !important;
+  }
+
+  .mySwiper {
+    width: 1500px;
+
+    .SW {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 30px auto;
+      
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        
+        .MDS-card {
+          padding:  20px; 
+          height: 350x;
+          border: 1px solid #ddd;
+          border-radius: 0.5rem;
+          text-align: left;
+
+          .img-container {
+            width: 300px;
+            height: 300px;
+
+            .MDS-img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              border-radius: 8px;
+            }
+          }
+          h2,h3{
+            margin: 10px 0 5px;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}
 
 .footer {
   width: 100%;

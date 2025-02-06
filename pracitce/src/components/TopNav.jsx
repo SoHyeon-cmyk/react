@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { IoIosWine } from "react-icons/io";
 
 
 
@@ -8,12 +7,12 @@ const TopNav = () => {
   const getNavLinkClass = ({ isActive }) => (isActive ? "active" : "");
 
 
-
   return (
     <div>
     <header className="nav">
-      <NavLink to="/">
-        <img src="" alt="Logo" />
+      <NavLink to="/" className="logo">
+        <img src="/image/jpg/logo.png" alt="Logo" />
+        <h3>몰디브한잔</h3>
       </NavLink>
       <nav>
         <ul>

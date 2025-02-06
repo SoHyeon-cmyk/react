@@ -1,7 +1,7 @@
 import React from 'react';
 import Mainslide from '../components/Mainslide';
 import Recommend from '../components/Recommend';
-
+import MidSlider from '../components/MidSlider';
 
 const Home = () => {
   
@@ -9,6 +9,7 @@ const Home = () => {
 <div>
  <Mainslide/>
  <Recommend/>
+ <MidSlider/>
 </div>
   );
 };
