@@ -45,16 +45,16 @@ const MidSlider = () => {
   return (
     <>
       <div className="mid-slide">
-        <h2>특별 프로모션</h2>
+        <h1>특별 프로모션</h1>
         <Swiper
           slidesPerView={4}
           spaceBetween={20}
-          // autoplay={{ delay: 4000, disableOnInteraction: false, }}
+          autoplay={{ delay: 4000, disableOnInteraction: false, }}
           navigation={true}
           pagination={{ clickable: true }}
           loop={true}
           modules={[Pagination, Navigation,Autoplay]}
-          className="mySwiper"
+          className="mySwiper1"
           breakpoints={{
             640: { slidesPerView: 1, spaceBetween: 10 },
             768: { slidesPerView: 2, spaceBetween: 15 },
@@ -65,15 +65,20 @@ const MidSlider = () => {
             <SwiperSlide key={index} className='SW'>
               <Link to={`/detail/${KORLiquor.KORLIQUOR_ID}`}>
               <div className="MDS-card">
-                <div className="img-container">
+                <div className="img-container1">
                 <img
-                  src={KORLiquor.KORLIQUOR_IMG}
-                  alt={KORLiquor.KORLIQUOR_NM}
+                  src={KORLiquor.KORLIQUOR_IMG} 
+                  // 집가서 이미지 추가하기
+                  alt={truncateText(KORLiquor.KORLIQUOR_NM,15)}
                   className="MDS-img"
                 />
                 </div>
-                <h2 className="MDS-h2">{KORLiquor.KORLIQUOR_NM}</h2>
+                <div className="card-container">
+                <h2 className="MDS-h2">
+                    {truncateText(KORLiquor.KORLIQUOR_NM, 15)}  
+                  </h2>
                 <h3 className="MDS-h3">{KORLiquor.KORLIQUOR_PRC}</h3>
+                </div>
               </div>
               </Link>
             </SwiperSlide>

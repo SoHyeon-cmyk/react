@@ -1,4 +1,4 @@
-import {Routes, Route} from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home'
 import QuickBtn from './components/QuickBtn';
 import TopNav from './components/TopNav';
@@ -7,16 +7,15 @@ import Recipe from './pages/Recipe'
 import Comunity from './pages/Comunity'
 import Search from './pages/Search'
 import Footer from './components/Footer';
+import MainPopupModal from './components/MainPopupModal.tsx';
 import './App.scss';
 
 
 
-
-// import required modules
-
 function App() {
   return (
     <div className='app'>
+    <MainPopupModal/>
     <TopNav/>
         <Routes>
           <Route path="/" element={<Home/>}></Route>

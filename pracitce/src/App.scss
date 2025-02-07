@@ -31,12 +31,32 @@ a {
 }
 
 
+
+.mainPopupModalWrap{
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  
+
+  .alter{
+    margin: 10px 0;
+  }
+  p{
+    margin: 10px 0;
+  }
+}
+.mainPopupModalCloseWrap{
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav {
-  padding: 10px 60px;
+  padding: 15px 60px 20px;
   justify-content: space-between;
   align-items: center;
   display: flex;
   overflow: hidden;
+  
 
   .logo {
     display: flex;
@@ -184,8 +204,8 @@ a {
     display: flex;
     align-items: center;
 
-    .swiper-button-prev,
-    .swiper-button-next,
+    .swiper-button-prev1,
+    .swiper-button-next2,
     .toggle-play {
       color: #2A2A2A;
       transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
@@ -208,7 +228,7 @@ a {
 
 .RCM-container {
   width: 1500px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
 
   h1 {
     pointer-events: none;
@@ -231,89 +251,125 @@ a {
   }
 
   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px; 
     padding: 1.2rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     text-align: left;
-
-    .img-container {
-      width: 300px;
-      height: 325px;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 8px;
-        margin-left: 8px;
-      }
-    }
-
-    h2 {
-      margin: 15px 0;
+    background-color: white;
+  }
+  
+  .img-container {
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  
+    img {
+      width: 300px; 
+      height: 300px; 
+      object-fit: cover; 
+      object-position: center; 
+      border-radius: 8px;
     }
   }
+  
+  h2 {
+    margin: 15px 0;
+    flex-grow: 1; 
+  }
+  
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
 }
+  
 
 .mid-slide {
-  width: 1500px;
-  height: 600px;
-  margin: 0 auto;
-
-  .swiper-slider {
-    all: unset !important;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto 40px;
+  h1{
+    margin:40px 0;
   }
+  .mySwiper1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  
 
-  .mySwiper {
-    width: 1500px;
+  .SW {
+    display: block;
 
-    .SW {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 2rem;
-      margin: 30px auto;
-      
       @media (min-width: 768px) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       @media (min-width: 1024px) {
         grid-template-columns: repeat(4, 1fr);
-        
+        gap: 1rem;
+
         .MDS-card {
-          padding:  20px; 
-          height: 350x;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          height: 400px;
+          padding: 16px;
+          background-color: white;
           border: 1px solid #ddd;
           border-radius: 0.5rem;
           text-align: left;
-
-          .img-container {
-            width: 300px;
-            height: 300px;
-
-            .MDS-img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              object-position: center;
-              border-radius: 8px;
-            }
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .img-container {
+          width: 100%;
+          height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+        
+          .MDS-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
-          h2,h3{
-            margin: 10px 0 5px;
+        }
+        
+
+        .card-container {
+          flex-grow: 1;
+
+          h2,
+          h3 {
+            white-space: nowrap;
+            overflow: hidden;
             text-overflow: ellipsis;
+            margin: 10px 0;
           }
         }
       }
     }
   }
 }
+
+
+
 
 .footer {
   width: 100%;

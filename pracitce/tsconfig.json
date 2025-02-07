@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 타겟 JavaScript 버전
+    "lib": ["dom", "esnext"], // 사용할 라이브러리
+    "jsx": "react-jsx", // JSX 변환 방식 (React 17 이상에서는 "react-jsx" 사용)
+    "moduleResolution": "node", // Node.js의 모듈 해석 방식
+    "strict": true, // 엄격한 타입 검사
+    "esModuleInterop": true, // ES6 모듈 시스템을 지원
+    "skipLibCheck": true, // 라이브러리 파일 검사 건너뛰기
+    "forceConsistentCasingInFileNames": true, // 파일명 대소문자 구분
+    "allowJs": true, // JS 파일도 TypeScript에서 처리 가능하도록 허용
+    "checkJs": false, // JS 파일 타입 체크 비활성화 (선택 사항)
+    "outDir": "./dist", // 컴파일된 파일 저장 위치
+    "rootDir": "./src" // 소스 코드 위치
+  },
+  "include": [
+    "src/**/*" // 컴파일할 파일들
+  ],
+  "exclude": [
+    "node_modules" // 컴파일에서 제외할 디렉토리
+  ]
+}
