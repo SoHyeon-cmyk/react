@@ -20,6 +20,7 @@ const TopNav = () => {
             <NavLink to="/" className={getNavLinkClass}>Home</NavLink>
             <NavLink to="/search" className={getNavLinkClass}>Search</NavLink>
             <NavLink to="/recipe" className={getNavLinkClass}>Recipe</NavLink>
+            <NavLink to="/events" className={getNavLinkClass}>Events</NavLink>
             <NavLink to="/comunity" className={getNavLinkClass}>Community</NavLink>
             <NavLink to="/mypage" className={getNavLinkClass}>Mypage</NavLink>
           </li>
