@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
 import { Modal } from '@mui/material';
+import React, { useEffect, useState } from 'react';
 import Paper from '@mui/material/Paper';
 import dayjs from 'dayjs';
-import { FaCheck } from "react-icons/fa6";
 
 export default function MainPopupModal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -55,7 +54,8 @@ export default function MainPopupModal() {
             transform: 'translate(-50%, -50%)',
             width: '450px',
             bgcolor: 'background.paper',
-            overflowY: 'auto'
+            overflowY: 'auto',
+            borderRadius:'10px'
 
           }}
           className='mainPopupModalWrap'
