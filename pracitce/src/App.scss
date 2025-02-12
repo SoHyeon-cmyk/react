@@ -658,7 +658,7 @@ a {
 
       .span-container {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         text-align: center;
         margin-top: 20px;
@@ -668,100 +668,94 @@ a {
   }
 }
 
-#Tab{
-  margin-top: 120px;
+#Tab {
+  display: flex;
+  width: 100%;
+
+
+
+.tabs {
+  width: 200px; 
+  height: 100%; 
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.tab-content {
+  flex: 1; 
+  padding: 10px;
+  box-sizing: border-box;
+  // overflow-y: hidden; 
+  height: 450px;
+}
+
+button {
+  all: unset;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.active {
+  color: #4b6b00;
+
+
+}
+}
+
+
+
+
+
+
+.Tabs-area {
+  height: 30px;
   position: relative;
-  .Tab-container{
-    width: 1500px;
-    .tabs {
-      margin-bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      width: 120px;
-      padding-top: 80px;
-    }
-    
-    button {
-      all: unset;
-      padding: 15px;
-      border-bottom: 1px solid #ddd;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    
-    button.active {
-    color:#4b6b00;
-    
-    }
-  }  
-  
-  .Tabs-area{
+
+  .title {
     position: absolute;
-    padding-left: 10px;
-    top: -20px;
-    &::after{
+    left: -200px;
+    
+    &::after {
       content: '';
-      width: 1300px;
+      width: 1120px;
       height: 1px;
-      left: 30px;
       background-color: #999;
       position: absolute;
-      margin-top: 15px;
+      margin: 20px 15px;
+      top: 25px;
+      left: 30px;
     }
   }
-  .Tab-Cont01 {
-    display: block;
 
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .tab-main01 {
+    display: flex;
+    padding: 30px;
+    margin-top: 57px;
+    
+    position: absolute;
+    gap: 15px;
 
-    @media (min-width: 1024px) {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
 
-      .TB-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 400px;
-        padding: 16px;
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 0.5rem;
-        text-align: left;
+
+    .Tab-Cont01 {
+
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .TBimg-container {
-        display: grid;
-        place-items: center;
-        width: 310px;
-        height: 300px;
-        overflow: hidden;
-      }
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
 
-      .TB-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
 
-      .TBcard-container {
-        width: 310px;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
 
-        h2,h3 {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          margin: 10px 0px 0 0px;
-        }
       }
     }
   }
@@ -772,12 +766,10 @@ a {
 
 
 
-
-
-
 .footer {
   width: 100%;
   padding: 30px 60px;
+  height: 300px;
   background-color: #2A2A2A;
 
   p {
